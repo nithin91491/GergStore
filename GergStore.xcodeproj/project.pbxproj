@@ -1,0 +1,390 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F3111371C214FF5000685E9 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3111361C214FF5000685E9 /* MenuTableViewController.swift */; };
+		5F3111391C21515B000685E9 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3111381C21515B000685E9 /* MenuTableViewCell.swift */; };
+		5F31113B1C2155FB000685E9 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F31113A1C2155FB000685E9 /* search.png */; };
+		5F3111421C217501000685E9 /* menu-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F3111401C217501000685E9 /* menu-icon.png */; };
+		5F3111431C217501000685E9 /* white-shopping-cart-md.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F3111411C217501000685E9 /* white-shopping-cart-md.png */; };
+		5F3111451C2177C5000685E9 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3111441C2177C5000685E9 /* CustomNavigationBar.swift */; };
+		5F3111471C2183B7000685E9 /* CustomUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3111461C2183B7000685E9 /* CustomUIView.swift */; };
+		5FB9661B1C1EABC70087C9BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB9661A1C1EABC70087C9BC /* AppDelegate.swift */; };
+		5FB9661D1C1EABC70087C9BC /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB9661C1C1EABC70087C9BC /* HomeScreenViewController.swift */; };
+		5FB966201C1EABC70087C9BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FB9661E1C1EABC70087C9BC /* Main.storyboard */; };
+		5FB966221C1EABC70087C9BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FB966211C1EABC70087C9BC /* Assets.xcassets */; };
+		5FB966251C1EABC70087C9BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FB966231C1EABC70087C9BC /* LaunchScreen.storyboard */; };
+		5FB9662D1C1EC7690087C9BC /* BG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5FB9662C1C1EC7690087C9BC /* BG.jpg */; };
+		5FB966351C1ED5B90087C9BC /* GergStoreLogo.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 5FB966341C1ED5B90087C9BC /* GergStoreLogo.tiff */; };
+		5FBC07BA1C20282400A0FAB6 /* SignInAndSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBC07B91C20282400A0FAB6 /* SignInAndSignUpViewController.swift */; };
+		5FDC7C481C1FDC570044AE20 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FDC7C461C1FDC570044AE20 /* facebook.png */; };
+		5FDC7C4B1C1FDD590044AE20 /* google-plus-circular-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FDC7C4A1C1FDD590044AE20 /* google-plus-circular-button.png */; };
+		5FDC7C521C1FEFF50044AE20 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDC7C511C1FEFF50044AE20 /* UIViewExtension.swift */; };
+		5FDC7C551C1FF7330044AE20 /* HorizontalLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDC7C541C1FF7330044AE20 /* HorizontalLineView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5F3111361C214FF5000685E9 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		5F3111381C21515B000685E9 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		5F31113A1C2155FB000685E9 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
+		5F3111401C217501000685E9 /* menu-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-icon.png"; sourceTree = "<group>"; };
+		5F3111411C217501000685E9 /* white-shopping-cart-md.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-shopping-cart-md.png"; sourceTree = "<group>"; };
+		5F3111441C2177C5000685E9 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
+		5F3111461C2183B7000685E9 /* CustomUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUIView.swift; sourceTree = "<group>"; };
+		5FB966171C1EABC70087C9BC /* GergStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GergStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FB9661A1C1EABC70087C9BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5FB9661C1C1EABC70087C9BC /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		5FB9661F1C1EABC70087C9BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5FB966211C1EABC70087C9BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5FB966241C1EABC70087C9BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5FB966261C1EABC70087C9BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FB9662C1C1EC7690087C9BC /* BG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BG.jpg; sourceTree = "<group>"; };
+		5FB966341C1ED5B90087C9BC /* GergStoreLogo.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = GergStoreLogo.tiff; sourceTree = "<group>"; };
+		5FBC07B91C20282400A0FAB6 /* SignInAndSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInAndSignUpViewController.swift; sourceTree = "<group>"; };
+		5FDC7C461C1FDC570044AE20 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
+		5FDC7C4A1C1FDD590044AE20 /* google-plus-circular-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "google-plus-circular-button.png"; sourceTree = "<group>"; };
+		5FDC7C511C1FEFF50044AE20 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		5FDC7C541C1FF7330044AE20 /* HorizontalLineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalLineView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5FB966141C1EABC70087C9BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5FB9660E1C1EABC70087C9BC = {
+			isa = PBXGroup;
+			children = (
+				5FB966191C1EABC70087C9BC /* GergStore */,
+				5FB966181C1EABC70087C9BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5FB966181C1EABC70087C9BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5FB966171C1EABC70087C9BC /* GergStore.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5FB966191C1EABC70087C9BC /* GergStore */ = {
+			isa = PBXGroup;
+			children = (
+				5FB9661A1C1EABC70087C9BC /* AppDelegate.swift */,
+				5FDC7C4F1C1FEF790044AE20 /* Extensions */,
+				5FDC7C4C1C1FEEEF0044AE20 /* Controllers */,
+				5FDC7C4D1C1FEF270044AE20 /* Views */,
+				5FDC7C501C1FEFB40044AE20 /* Assets */,
+				5FB966261C1EABC70087C9BC /* Info.plist */,
+				5FDC7C531C1FF70F0044AE20 /* SubClasses */,
+			);
+			path = GergStore;
+			sourceTree = "<group>";
+		};
+		5FDC7C4C1C1FEEEF0044AE20 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5FB9661C1C1EABC70087C9BC /* HomeScreenViewController.swift */,
+				5FBC07B91C20282400A0FAB6 /* SignInAndSignUpViewController.swift */,
+				5F3111361C214FF5000685E9 /* MenuTableViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		5FDC7C4D1C1FEF270044AE20 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5FB9661E1C1EABC70087C9BC /* Main.storyboard */,
+				5FB966231C1EABC70087C9BC /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		5FDC7C4F1C1FEF790044AE20 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5FDC7C511C1FEFF50044AE20 /* UIViewExtension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		5FDC7C501C1FEFB40044AE20 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				5FB966211C1EABC70087C9BC /* Assets.xcassets */,
+				5FB9662C1C1EC7690087C9BC /* BG.jpg */,
+				5F31113A1C2155FB000685E9 /* search.png */,
+				5F3111401C217501000685E9 /* menu-icon.png */,
+				5F3111411C217501000685E9 /* white-shopping-cart-md.png */,
+				5FDC7C461C1FDC570044AE20 /* facebook.png */,
+				5FDC7C4A1C1FDD590044AE20 /* google-plus-circular-button.png */,
+				5FB966341C1ED5B90087C9BC /* GergStoreLogo.tiff */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		5FDC7C531C1FF70F0044AE20 /* SubClasses */ = {
+			isa = PBXGroup;
+			children = (
+				5FDC7C541C1FF7330044AE20 /* HorizontalLineView.swift */,
+				5F3111381C21515B000685E9 /* MenuTableViewCell.swift */,
+				5F3111441C2177C5000685E9 /* CustomNavigationBar.swift */,
+				5F3111461C2183B7000685E9 /* CustomUIView.swift */,
+			);
+			name = SubClasses;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5FB966161C1EABC70087C9BC /* GergStore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FB966291C1EABC70087C9BC /* Build configuration list for PBXNativeTarget "GergStore" */;
+			buildPhases = (
+				5FB966131C1EABC70087C9BC /* Sources */,
+				5FB966141C1EABC70087C9BC /* Frameworks */,
+				5FB966151C1EABC70087C9BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GergStore;
+			productName = GergStore;
+			productReference = 5FB966171C1EABC70087C9BC /* GergStore.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5FB9660F1C1EABC70087C9BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Nikhil Srivastava";
+				TargetAttributes = {
+					5FB966161C1EABC70087C9BC = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 5FB966121C1EABC70087C9BC /* Build configuration list for PBXProject "GergStore" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5FB9660E1C1EABC70087C9BC;
+			productRefGroup = 5FB966181C1EABC70087C9BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5FB966161C1EABC70087C9BC /* GergStore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5FB966151C1EABC70087C9BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FB966251C1EABC70087C9BC /* LaunchScreen.storyboard in Resources */,
+				5FDC7C4B1C1FDD590044AE20 /* google-plus-circular-button.png in Resources */,
+				5F3111431C217501000685E9 /* white-shopping-cart-md.png in Resources */,
+				5FDC7C481C1FDC570044AE20 /* facebook.png in Resources */,
+				5F31113B1C2155FB000685E9 /* search.png in Resources */,
+				5F3111421C217501000685E9 /* menu-icon.png in Resources */,
+				5FB966221C1EABC70087C9BC /* Assets.xcassets in Resources */,
+				5FB966351C1ED5B90087C9BC /* GergStoreLogo.tiff in Resources */,
+				5FB9662D1C1EC7690087C9BC /* BG.jpg in Resources */,
+				5FB966201C1EABC70087C9BC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5FB966131C1EABC70087C9BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FDC7C551C1FF7330044AE20 /* HorizontalLineView.swift in Sources */,
+				5FBC07BA1C20282400A0FAB6 /* SignInAndSignUpViewController.swift in Sources */,
+				5F3111391C21515B000685E9 /* MenuTableViewCell.swift in Sources */,
+				5F3111371C214FF5000685E9 /* MenuTableViewController.swift in Sources */,
+				5F3111451C2177C5000685E9 /* CustomNavigationBar.swift in Sources */,
+				5FDC7C521C1FEFF50044AE20 /* UIViewExtension.swift in Sources */,
+				5FB9661D1C1EABC70087C9BC /* HomeScreenViewController.swift in Sources */,
+				5F3111471C2183B7000685E9 /* CustomUIView.swift in Sources */,
+				5FB9661B1C1EABC70087C9BC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5FB9661E1C1EABC70087C9BC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5FB9661F1C1EABC70087C9BC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5FB966231C1EABC70087C9BC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5FB966241C1EABC70087C9BC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5FB966271C1EABC70087C9BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5FB966281C1EABC70087C9BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5FB9662A1C1EABC70087C9BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GergStore/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appsriv.GergStore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5FB9662B1C1EABC70087C9BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GergStore/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appsriv.GergStore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5FB966121C1EABC70087C9BC /* Build configuration list for PBXProject "GergStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FB966271C1EABC70087C9BC /* Debug */,
+				5FB966281C1EABC70087C9BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FB966291C1EABC70087C9BC /* Build configuration list for PBXNativeTarget "GergStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FB9662A1C1EABC70087C9BC /* Debug */,
+				5FB9662B1C1EABC70087C9BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5FB9660F1C1EABC70087C9BC /* Project object */;
+}

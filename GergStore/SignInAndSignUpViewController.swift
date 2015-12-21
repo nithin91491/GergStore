@@ -71,8 +71,34 @@ class SignInAndSignUpViewController: UIViewController {
         else{
             configureSignUpScreen()
         }
+        
+        let datePicker = UIDatePicker()
+        datePicker.datePickerMode = .Date
+        txtDateOfBirth.inputView = datePicker
+        
+        let toolBar = UIToolbar()
+        toolBar.barStyle = UIBarStyle.Default
+        toolBar.translucent = true
+        toolBar.tintColor = UIColor.blueColor()
+        toolBar.sizeToFit()
+        
+        let doneButton = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.Plain, target: self, action: "donePicker")
+        
+        toolBar.setItems([doneButton], animated: true)
+        toolBar.userInteractionEnabled = true
+        txtDateOfBirth.inputAccessoryView = toolBar
+        
     }
 
+    func donePicker(){
+        
+        
+        
+        self.view.endEditing(true)
+        
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -95,6 +121,12 @@ class SignInAndSignUpViewController: UIViewController {
        return false
     }
     
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    
+    // MARK: - User Defined Functions
     
     //tag 0 - Always present
     //tag 1 - SignUp views
@@ -112,14 +144,12 @@ class SignInAndSignUpViewController: UIViewController {
         for v in self.view.subviews{
             if v.tag == 1{
                 v.hidden=true   //hides all SignUp views
-                //self.view.sendSubviewToBack(v)
+                self.view.sendSubviewToBack(v)
             }
             else if v.tag == 2{
                 v.hidden=false  //unhides all SingIn views
-                //self.view.bringSubviewToFront(v)
-                //v.userInteractionEnabled = true
+                self.view.bringSubviewToFront(v)
             }
-            
         }
     }
     
@@ -133,19 +163,21 @@ class SignInAndSignUpViewController: UIViewController {
         btnSignUp.titleLabel?.textColor = UIColor.blackColor()
         
         for v in self.view.subviews{
+            
             if v.tag == 1{
                 v.hidden=false   //unhides all SignUp views
-//                self.view.bringSubviewToFront(v)
-//                v.userInteractionEnabled = true
+                self.view.bringSubviewToFront(v)
             }
             else if v.tag == 2{
                 v.hidden=true  //hides all SingIn views
-                //self.view.sendSubviewToBack(v)
-                //v.userInteractionEnabled=false
+                self.view.sendSubviewToBack(v)
             }
             
         }
  
     }
+    
+    
+    
 
 }

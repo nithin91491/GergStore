@@ -10,6 +10,7 @@ import UIKit
 
 class MenuTableViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
+    @IBOutlet weak var hamburgerButton: UIBarButtonItem!
     @IBOutlet weak var tableV: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +20,12 @@ class MenuTableViewController: UIViewController,UITableViewDelegate,UITableViewD
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        if self.revealViewController() != nil {
+            hamburgerButton.target = self.revealViewController()
+            hamburgerButton.action = "revealToggle:"
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,8 +49,8 @@ class MenuTableViewController: UIViewController,UITableViewDelegate,UITableViewD
      func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as! MenuTableViewCell
 
-        cell.cellImageView.image = UIImage(named: "GergStoreLogo.tiff")!
-        cell.cellImageView.contentMode = .Center
+        cell.cellImageView.image = UIImage(named: "newuser-gergstoreimage")!
+        cell.cellImageView.contentMode = .ScaleAspectFill
 
         return cell
     }

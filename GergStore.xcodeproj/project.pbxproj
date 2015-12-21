@@ -9,47 +9,69 @@
 /* Begin PBXBuildFile section */
 		5F3111371C214FF5000685E9 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3111361C214FF5000685E9 /* MenuTableViewController.swift */; };
 		5F3111391C21515B000685E9 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3111381C21515B000685E9 /* MenuTableViewCell.swift */; };
-		5F31113B1C2155FB000685E9 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F31113A1C2155FB000685E9 /* search.png */; };
-		5F3111421C217501000685E9 /* menu-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F3111401C217501000685E9 /* menu-icon.png */; };
-		5F3111431C217501000685E9 /* white-shopping-cart-md.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F3111411C217501000685E9 /* white-shopping-cart-md.png */; };
 		5F3111451C2177C5000685E9 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3111441C2177C5000685E9 /* CustomNavigationBar.swift */; };
-		5F3111471C2183B7000685E9 /* CustomUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3111461C2183B7000685E9 /* CustomUIView.swift */; };
+		5F85FF6F1C27BF370092FE81 /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F85FF6E1C27BF370092FE81 /* CustomSegmentedControl.swift */; };
+		5F85FF711C27C41E0092FE81 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F85FF701C27C41E0092FE81 /* CartViewController.swift */; };
+		5F85FF781C27E2A40092FE81 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F85FF771C27E2A40092FE81 /* SWRevealViewController.m */; };
+		5F85FF7E1C280F740092FE81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F85FF7D1C280F740092FE81 /* ViewController.swift */; };
+		5F85FF821C2820050092FE81 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F85FF801C2820050092FE81 /* Fabric.framework */; };
+		5F85FF831C2820050092FE81 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F85FF811C2820050092FE81 /* Crashlytics.framework */; };
 		5FB9661B1C1EABC70087C9BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB9661A1C1EABC70087C9BC /* AppDelegate.swift */; };
 		5FB9661D1C1EABC70087C9BC /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB9661C1C1EABC70087C9BC /* HomeScreenViewController.swift */; };
 		5FB966201C1EABC70087C9BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FB9661E1C1EABC70087C9BC /* Main.storyboard */; };
 		5FB966221C1EABC70087C9BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FB966211C1EABC70087C9BC /* Assets.xcassets */; };
 		5FB966251C1EABC70087C9BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FB966231C1EABC70087C9BC /* LaunchScreen.storyboard */; };
-		5FB9662D1C1EC7690087C9BC /* BG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5FB9662C1C1EC7690087C9BC /* BG.jpg */; };
-		5FB966351C1ED5B90087C9BC /* GergStoreLogo.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 5FB966341C1ED5B90087C9BC /* GergStoreLogo.tiff */; };
 		5FBC07BA1C20282400A0FAB6 /* SignInAndSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBC07B91C20282400A0FAB6 /* SignInAndSignUpViewController.swift */; };
 		5FDC7C481C1FDC570044AE20 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FDC7C461C1FDC570044AE20 /* facebook.png */; };
 		5FDC7C4B1C1FDD590044AE20 /* google-plus-circular-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FDC7C4A1C1FDD590044AE20 /* google-plus-circular-button.png */; };
 		5FDC7C521C1FEFF50044AE20 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDC7C511C1FEFF50044AE20 /* UIViewExtension.swift */; };
 		5FDC7C551C1FF7330044AE20 /* HorizontalLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDC7C541C1FF7330044AE20 /* HorizontalLineView.swift */; };
+		5FE15ED21C23F426000A4507 /* DetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE15ED11C23F426000A4507 /* DetailCollectionViewCell.swift */; };
+		5FE15ED41C240125000A4507 /* SubCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE15ED31C240125000A4507 /* SubCategoryViewController.swift */; };
+		5FE15ED81C240505000A4507 /* SubCategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE15ED71C240505000A4507 /* SubCategoryCollectionViewCell.swift */; };
+		5FE15EDA1C240E54000A4507 /* TextFieldWithThreeBorders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE15ED91C240E54000A4507 /* TextFieldWithThreeBorders.swift */; };
+		5FE475DC1C22A43500050ABA /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE475DB1C22A43500050ABA /* CategoryViewController.swift */; };
+		5FE475DE1C22C33600050ABA /* MasterCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE475DD1C22C33600050ABA /* MasterCollectionViewController.swift */; };
+		5FE475E01C22C90E00050ABA /* DetailCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE475DF1C22C90E00050ABA /* DetailCollectionViewController.swift */; };
+		5FE475E21C22CD8100050ABA /* categoryImage.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 5FE475E11C22CD8100050ABA /* categoryImage.tiff */; };
+		5FE475E61C22CDFA00050ABA /* MasterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE475E51C22CDFA00050ABA /* MasterCollectionViewCell.swift */; };
+		5FE475E81C22D4CB00050ABA /* CenterCellCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE475E71C22D4CB00050ABA /* CenterCellCollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5F3111361C214FF5000685E9 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		5F3111381C21515B000685E9 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
-		5F31113A1C2155FB000685E9 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
-		5F3111401C217501000685E9 /* menu-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-icon.png"; sourceTree = "<group>"; };
-		5F3111411C217501000685E9 /* white-shopping-cart-md.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-shopping-cart-md.png"; sourceTree = "<group>"; };
 		5F3111441C2177C5000685E9 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
-		5F3111461C2183B7000685E9 /* CustomUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUIView.swift; sourceTree = "<group>"; };
+		5F85FF6E1C27BF370092FE81 /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
+		5F85FF701C27C41E0092FE81 /* CartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		5F85FF751C27E2A30092FE81 /* GergStore-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GergStore-Bridging-Header.h"; sourceTree = "<group>"; };
+		5F85FF761C27E2A40092FE81 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		5F85FF771C27E2A40092FE81 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		5F85FF7D1C280F740092FE81 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5F85FF801C2820050092FE81 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
+		5F85FF811C2820050092FE81 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = SOURCE_ROOT; };
 		5FB966171C1EABC70087C9BC /* GergStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GergStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FB9661A1C1EABC70087C9BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FB9661C1C1EABC70087C9BC /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		5FB9661F1C1EABC70087C9BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5FB966211C1EABC70087C9BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FB966241C1EABC70087C9BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		5FB966261C1EABC70087C9BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5FB9662C1C1EC7690087C9BC /* BG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BG.jpg; sourceTree = "<group>"; };
-		5FB966341C1ED5B90087C9BC /* GergStoreLogo.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = GergStoreLogo.tiff; sourceTree = "<group>"; };
+		5FB966261C1EABC70087C9BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = GergStore/Info.plist; sourceTree = "<group>"; };
 		5FBC07B91C20282400A0FAB6 /* SignInAndSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInAndSignUpViewController.swift; sourceTree = "<group>"; };
 		5FDC7C461C1FDC570044AE20 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
 		5FDC7C4A1C1FDD590044AE20 /* google-plus-circular-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "google-plus-circular-button.png"; sourceTree = "<group>"; };
 		5FDC7C511C1FEFF50044AE20 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		5FDC7C541C1FF7330044AE20 /* HorizontalLineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalLineView.swift; sourceTree = "<group>"; };
+		5FE15ED11C23F426000A4507 /* DetailCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCollectionViewCell.swift; sourceTree = "<group>"; };
+		5FE15ED31C240125000A4507 /* SubCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubCategoryViewController.swift; sourceTree = "<group>"; };
+		5FE15ED71C240505000A4507 /* SubCategoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubCategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		5FE15ED91C240E54000A4507 /* TextFieldWithThreeBorders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldWithThreeBorders.swift; sourceTree = "<group>"; };
+		5FE475DB1C22A43500050ABA /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		5FE475DD1C22C33600050ABA /* MasterCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterCollectionViewController.swift; sourceTree = "<group>"; };
+		5FE475DF1C22C90E00050ABA /* DetailCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCollectionViewController.swift; sourceTree = "<group>"; };
+		5FE475E11C22CD8100050ABA /* categoryImage.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = categoryImage.tiff; sourceTree = "<group>"; };
+		5FE475E51C22CDFA00050ABA /* MasterCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterCollectionViewCell.swift; sourceTree = "<group>"; };
+		5FE475E71C22D4CB00050ABA /* CenterCellCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterCellCollectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,16 +79,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F85FF831C2820050092FE81 /* Crashlytics.framework in Frameworks */,
+				5F85FF821C2820050092FE81 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F85FF731C27E2300092FE81 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				5F85FF741C27E27B0092FE81 /* HamburgerSlideOutMenu */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		5F85FF741C27E27B0092FE81 /* HamburgerSlideOutMenu */ = {
+			isa = PBXGroup;
+			children = (
+				5F85FF761C27E2A40092FE81 /* SWRevealViewController.h */,
+				5F85FF771C27E2A40092FE81 /* SWRevealViewController.m */,
+				5F85FF751C27E2A30092FE81 /* GergStore-Bridging-Header.h */,
+			);
+			name = HamburgerSlideOutMenu;
+			sourceTree = "<group>";
+		};
 		5FB9660E1C1EABC70087C9BC = {
 			isa = PBXGroup;
 			children = (
 				5FB966191C1EABC70087C9BC /* GergStore */,
+				5FB966261C1EABC70087C9BC /* Info.plist */,
 				5FB966181C1EABC70087C9BC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -83,11 +126,11 @@
 			isa = PBXGroup;
 			children = (
 				5FB9661A1C1EABC70087C9BC /* AppDelegate.swift */,
+				5F85FF731C27E2300092FE81 /* Libraries */,
 				5FDC7C4F1C1FEF790044AE20 /* Extensions */,
 				5FDC7C4C1C1FEEEF0044AE20 /* Controllers */,
 				5FDC7C4D1C1FEF270044AE20 /* Views */,
 				5FDC7C501C1FEFB40044AE20 /* Assets */,
-				5FB966261C1EABC70087C9BC /* Info.plist */,
 				5FDC7C531C1FF70F0044AE20 /* SubClasses */,
 			);
 			path = GergStore;
@@ -99,6 +142,12 @@
 				5FB9661C1C1EABC70087C9BC /* HomeScreenViewController.swift */,
 				5FBC07B91C20282400A0FAB6 /* SignInAndSignUpViewController.swift */,
 				5F3111361C214FF5000685E9 /* MenuTableViewController.swift */,
+				5FE475DB1C22A43500050ABA /* CategoryViewController.swift */,
+				5FE475DD1C22C33600050ABA /* MasterCollectionViewController.swift */,
+				5FE475DF1C22C90E00050ABA /* DetailCollectionViewController.swift */,
+				5FE15ED31C240125000A4507 /* SubCategoryViewController.swift */,
+				5F85FF701C27C41E0092FE81 /* CartViewController.swift */,
+				5F85FF7D1C280F740092FE81 /* ViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -124,13 +173,9 @@
 			isa = PBXGroup;
 			children = (
 				5FB966211C1EABC70087C9BC /* Assets.xcassets */,
-				5FB9662C1C1EC7690087C9BC /* BG.jpg */,
-				5F31113A1C2155FB000685E9 /* search.png */,
-				5F3111401C217501000685E9 /* menu-icon.png */,
-				5F3111411C217501000685E9 /* white-shopping-cart-md.png */,
 				5FDC7C461C1FDC570044AE20 /* facebook.png */,
+				5FE475E11C22CD8100050ABA /* categoryImage.tiff */,
 				5FDC7C4A1C1FDD590044AE20 /* google-plus-circular-button.png */,
-				5FB966341C1ED5B90087C9BC /* GergStoreLogo.tiff */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -138,10 +183,17 @@
 		5FDC7C531C1FF70F0044AE20 /* SubClasses */ = {
 			isa = PBXGroup;
 			children = (
+				5F85FF801C2820050092FE81 /* Fabric.framework */,
+				5F85FF811C2820050092FE81 /* Crashlytics.framework */,
 				5FDC7C541C1FF7330044AE20 /* HorizontalLineView.swift */,
 				5F3111381C21515B000685E9 /* MenuTableViewCell.swift */,
 				5F3111441C2177C5000685E9 /* CustomNavigationBar.swift */,
-				5F3111461C2183B7000685E9 /* CustomUIView.swift */,
+				5FE475E51C22CDFA00050ABA /* MasterCollectionViewCell.swift */,
+				5FE15ED11C23F426000A4507 /* DetailCollectionViewCell.swift */,
+				5FE475E71C22D4CB00050ABA /* CenterCellCollectionView.swift */,
+				5FE15ED71C240505000A4507 /* SubCategoryCollectionViewCell.swift */,
+				5FE15ED91C240E54000A4507 /* TextFieldWithThreeBorders.swift */,
+				5F85FF6E1C27BF370092FE81 /* CustomSegmentedControl.swift */,
 			);
 			name = SubClasses;
 			sourceTree = "<group>";
@@ -156,6 +208,7 @@
 				5FB966131C1EABC70087C9BC /* Sources */,
 				5FB966141C1EABC70087C9BC /* Frameworks */,
 				5FB966151C1EABC70087C9BC /* Resources */,
+				5F85FF7F1C281F9E0092FE81 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -178,6 +231,7 @@
 				TargetAttributes = {
 					5FB966161C1EABC70087C9BC = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = K37J4WCRKJ;
 					};
 				};
 			};
@@ -206,32 +260,56 @@
 			files = (
 				5FB966251C1EABC70087C9BC /* LaunchScreen.storyboard in Resources */,
 				5FDC7C4B1C1FDD590044AE20 /* google-plus-circular-button.png in Resources */,
-				5F3111431C217501000685E9 /* white-shopping-cart-md.png in Resources */,
+				5FE475E21C22CD8100050ABA /* categoryImage.tiff in Resources */,
 				5FDC7C481C1FDC570044AE20 /* facebook.png in Resources */,
-				5F31113B1C2155FB000685E9 /* search.png in Resources */,
-				5F3111421C217501000685E9 /* menu-icon.png in Resources */,
 				5FB966221C1EABC70087C9BC /* Assets.xcassets in Resources */,
-				5FB966351C1ED5B90087C9BC /* GergStoreLogo.tiff in Resources */,
-				5FB9662D1C1EC7690087C9BC /* BG.jpg in Resources */,
 				5FB966201C1EABC70087C9BC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5F85FF7F1C281F9E0092FE81 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 68a3e1bf44388d0fc6e645ea3eed7fa252d42719 b45dca69a7e826bbc57466c74783561b678d25855fb84af8d10a50447b97236a";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5FB966131C1EABC70087C9BC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FE475DC1C22A43500050ABA /* CategoryViewController.swift in Sources */,
+				5FE15ED41C240125000A4507 /* SubCategoryViewController.swift in Sources */,
 				5FDC7C551C1FF7330044AE20 /* HorizontalLineView.swift in Sources */,
 				5FBC07BA1C20282400A0FAB6 /* SignInAndSignUpViewController.swift in Sources */,
 				5F3111391C21515B000685E9 /* MenuTableViewCell.swift in Sources */,
+				5F85FF6F1C27BF370092FE81 /* CustomSegmentedControl.swift in Sources */,
+				5FE15ED81C240505000A4507 /* SubCategoryCollectionViewCell.swift in Sources */,
+				5F85FF781C27E2A40092FE81 /* SWRevealViewController.m in Sources */,
+				5FE475DE1C22C33600050ABA /* MasterCollectionViewController.swift in Sources */,
 				5F3111371C214FF5000685E9 /* MenuTableViewController.swift in Sources */,
+				5F85FF711C27C41E0092FE81 /* CartViewController.swift in Sources */,
 				5F3111451C2177C5000685E9 /* CustomNavigationBar.swift in Sources */,
 				5FDC7C521C1FEFF50044AE20 /* UIViewExtension.swift in Sources */,
+				5FE15EDA1C240E54000A4507 /* TextFieldWithThreeBorders.swift in Sources */,
+				5FE15ED21C23F426000A4507 /* DetailCollectionViewCell.swift in Sources */,
 				5FB9661D1C1EABC70087C9BC /* HomeScreenViewController.swift in Sources */,
-				5F3111471C2183B7000685E9 /* CustomUIView.swift in Sources */,
+				5FE475E81C22D4CB00050ABA /* CenterCellCollectionView.swift in Sources */,
+				5FE475E01C22C90E00050ABA /* DetailCollectionViewController.swift in Sources */,
+				5F85FF7E1C280F740092FE81 /* ViewController.swift in Sources */,
+				5FE475E61C22CDFA00050ABA /* MasterCollectionViewCell.swift in Sources */,
 				5FB9661B1C1EABC70087C9BC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,10 +423,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = GergStore/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appsriv.GergStore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "GergStore/GergStore-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -356,10 +445,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = GergStore/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appsriv.GergStore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "GergStore/GergStore-Bridging-Header.h";
 			};
 			name = Release;
 		};

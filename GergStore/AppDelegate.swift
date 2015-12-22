@@ -20,6 +20,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         Fabric.with([Crashlytics.self])
+        
+        let image = UIImage(named: "back-button")
+        
+        UINavigationBar.appearance().backIndicatorImage = image
+        UINavigationBar.appearance().backIndicatorTransitionMaskImage = image
+        UIBarButtonItem.appearance()
+            .setBackButtonTitlePositionAdjustment(UIOffsetMake(0, -66), forBarMetrics: .Default)
 
         return true
     }

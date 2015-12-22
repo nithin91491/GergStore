@@ -8,7 +8,9 @@
 
 import UIKit
 
-class CartViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class CartViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,CustomSearchControllerDelegate {
+
+    var customSearchController:CustomSearchController!
 
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
@@ -16,6 +18,19 @@ class CartViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
 
         // Do any additional setup after loading the view.
     
+        let barTintColor = UIColor(red: 80/255, green: 185/255, blue: 254/255, alpha: 1)
+        customSearchController = CustomSearchController(searchResultsController: self, searchBarFrame: CGRectMake(0.0, 0.0, 200.0, 25.0), searchBarFont: UIFont(name: "Futura", size: 16.0)!, searchBarTextColor: UIColor.orangeColor(), searchBarTintColor: barTintColor)
+        
+        customSearchController.customSearchBar.placeholder = "Search"
+        
+        let frame = CGRectMake(0, 0, 200, 25.0)
+        
+        let titleViewCustom = UIView(frame:frame)
+        
+        titleViewCustom.addSubview(customSearchController.customSearchBar)
+        titleViewCustom.backgroundColor = UIColor.clearColor()
+        self.navigationItem.titleView = titleViewCustom
+        customSearchController.customDelegate = self
         
     }
 
@@ -60,6 +75,40 @@ class CartViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return "You have 3 items in your cart"
     }
+    
+    //Custom search controller delegate methods
+    func didStartSearching() {
+        //        shouldShowSearchResults = true
+        //        tblSearchResults.reloadData()
+    }
+    
+    
+    func didTapOnSearchButton() {
+        //        if !shouldShowSearchResults {
+        //            shouldShowSearchResults = true
+        //            tblSearchResults.reloadData()
+        //        }
+    }
+    
+    
+    func didTapOnCancelButton() {
+        //        shouldShowSearchResults = false
+        //        tblSearchResults.reloadData()
+    }
+    
+    
+    func didChangeSearchText(searchText: String) {
+        // Filter the data array and get only those countries that match the search text.
+        //        filteredArray = dataArray.filter({ (country) -> Bool in
+        //            let countryText: NSString = country
+        //
+        //            return (countryText.rangeOfString(searchText, options: NSStringCompareOptions.CaseInsensitiveSearch).location) != NSNotFound
+        //        })
+        //
+        //        // Reload the tableview.
+        //        tblSearchResults.reloadData()
+    }
+
     
 
 }

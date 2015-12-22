@@ -36,6 +36,8 @@
 		5FE475E21C22CD8100050ABA /* categoryImage.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 5FE475E11C22CD8100050ABA /* categoryImage.tiff */; };
 		5FE475E61C22CDFA00050ABA /* MasterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE475E51C22CDFA00050ABA /* MasterCollectionViewCell.swift */; };
 		5FE475E81C22D4CB00050ABA /* CenterCellCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE475E71C22D4CB00050ABA /* CenterCellCollectionView.swift */; };
+		5FEA683D1C291A1800F7B582 /* CustomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEA683B1C291A1800F7B582 /* CustomSearchBar.swift */; };
+		5FEA683E1C291A1800F7B582 /* CustomSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEA683C1C291A1800F7B582 /* CustomSearchController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +74,8 @@
 		5FE475E11C22CD8100050ABA /* categoryImage.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = categoryImage.tiff; sourceTree = "<group>"; };
 		5FE475E51C22CDFA00050ABA /* MasterCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterCollectionViewCell.swift; sourceTree = "<group>"; };
 		5FE475E71C22D4CB00050ABA /* CenterCellCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterCellCollectionView.swift; sourceTree = "<group>"; };
+		5FEA683B1C291A1800F7B582 /* CustomSearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSearchBar.swift; sourceTree = "<group>"; };
+		5FEA683C1C291A1800F7B582 /* CustomSearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSearchController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +198,8 @@
 				5FE15ED71C240505000A4507 /* SubCategoryCollectionViewCell.swift */,
 				5FE15ED91C240E54000A4507 /* TextFieldWithThreeBorders.swift */,
 				5F85FF6E1C27BF370092FE81 /* CustomSegmentedControl.swift */,
+				5FEA683B1C291A1800F7B582 /* CustomSearchBar.swift */,
+				5FEA683C1C291A1800F7B582 /* CustomSearchController.swift */,
 			);
 			name = SubClasses;
 			sourceTree = "<group>";
@@ -297,6 +303,7 @@
 				5F3111391C21515B000685E9 /* MenuTableViewCell.swift in Sources */,
 				5F85FF6F1C27BF370092FE81 /* CustomSegmentedControl.swift in Sources */,
 				5FE15ED81C240505000A4507 /* SubCategoryCollectionViewCell.swift in Sources */,
+				5FEA683E1C291A1800F7B582 /* CustomSearchController.swift in Sources */,
 				5F85FF781C27E2A40092FE81 /* SWRevealViewController.m in Sources */,
 				5FE475DE1C22C33600050ABA /* MasterCollectionViewController.swift in Sources */,
 				5F3111371C214FF5000685E9 /* MenuTableViewController.swift in Sources */,
@@ -310,6 +317,7 @@
 				5FE475E01C22C90E00050ABA /* DetailCollectionViewController.swift in Sources */,
 				5F85FF7E1C280F740092FE81 /* ViewController.swift in Sources */,
 				5FE475E61C22CDFA00050ABA /* MasterCollectionViewCell.swift in Sources */,
+				5FEA683D1C291A1800F7B582 /* CustomSearchBar.swift in Sources */,
 				5FB9661B1C1EABC70087C9BC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

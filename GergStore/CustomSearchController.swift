@@ -66,13 +66,6 @@ class CustomSearchController: UISearchController, UISearchBarDelegate {
         customSearchBar.tintColor = textColor
         customSearchBar.showsBookmarkButton = false
         customSearchBar.showsCancelButton = false
-        
-//        customSearchBar.layer.borderColor = UIColor.whiteColor().CGColor
-//        customSearchBar.layer.borderWidth = 1
-//        customSearchBar.layer.cornerRadius = 15
-//        customSearchBar.layer.borderColor = UIColor(red: 80/255, green: 185/255, blue: 254/255, alpha: 1).CGColor
-        //customSearchBar.backgroundColor = UIColor(red: 80/255, green: 185/255, blue: 254/255, alpha: 1)
-        
         customSearchBar.delegate = self
     }
     
@@ -81,6 +74,8 @@ class CustomSearchController: UISearchController, UISearchBarDelegate {
     
     func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
         customDelegate.didStartSearching()
+        self.customSearchBar.showsCancelButton = true
+        
     }
     
     
@@ -93,6 +88,7 @@ class CustomSearchController: UISearchController, UISearchBarDelegate {
     func searchBarCancelButtonClicked(searchBar: UISearchBar) {
         customSearchBar.resignFirstResponder()
         customDelegate.didTapOnCancelButton()
+        self.customSearchBar.showsCancelButton = false
     }
     
     

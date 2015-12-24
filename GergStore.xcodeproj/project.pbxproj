@@ -38,6 +38,12 @@
 		5FE475E81C22D4CB00050ABA /* CenterCellCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE475E71C22D4CB00050ABA /* CenterCellCollectionView.swift */; };
 		5FEA683D1C291A1800F7B582 /* CustomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEA683B1C291A1800F7B582 /* CustomSearchBar.swift */; };
 		5FEA683E1C291A1800F7B582 /* CustomSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEA683C1C291A1800F7B582 /* CustomSearchController.swift */; };
+		5FF7B5D11C2A65300005301E /* SearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF7B5D01C2A65300005301E /* SearchResultsController.swift */; };
+		5FF7B5D31C2A882E0005301E /* ProductScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF7B5D21C2A882E0005301E /* ProductScreenViewController.swift */; };
+		5FF7B5D71C2AA3750005301E /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FF7B5D61C2AA3750005301E /* FBSDKCoreKit.framework */; };
+		5FF7B5DA1C2AA6BD0005301E /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FF7B5D81C2AA6BD0005301E /* Bolts.framework */; };
+		5FF7B5DB1C2AA6BD0005301E /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FF7B5D91C2AA6BD0005301E /* FBSDKLoginKit.framework */; };
+		5FF7B5DD1C2ACE500005301E /* CustomFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF7B5DC1C2ACE500005301E /* CustomFlowLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +82,12 @@
 		5FE475E71C22D4CB00050ABA /* CenterCellCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterCellCollectionView.swift; sourceTree = "<group>"; };
 		5FEA683B1C291A1800F7B582 /* CustomSearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSearchBar.swift; sourceTree = "<group>"; };
 		5FEA683C1C291A1800F7B582 /* CustomSearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSearchController.swift; sourceTree = "<group>"; };
+		5FF7B5D01C2A65300005301E /* SearchResultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsController.swift; sourceTree = "<group>"; };
+		5FF7B5D21C2A882E0005301E /* ProductScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductScreenViewController.swift; sourceTree = "<group>"; };
+		5FF7B5D61C2AA3750005301E /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		5FF7B5D81C2AA6BD0005301E /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		5FF7B5D91C2AA6BD0005301E /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		5FF7B5DC1C2ACE500005301E /* CustomFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFlowLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +96,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F85FF831C2820050092FE81 /* Crashlytics.framework in Frameworks */,
+				5FF7B5D71C2AA3750005301E /* FBSDKCoreKit.framework in Frameworks */,
+				5FF7B5DB1C2AA6BD0005301E /* FBSDKLoginKit.framework in Frameworks */,
 				5F85FF821C2820050092FE81 /* Fabric.framework in Frameworks */,
+				5FF7B5DA1C2AA6BD0005301E /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				5FB9661A1C1EABC70087C9BC /* AppDelegate.swift */,
+				5FF7B5D51C2AA0330005301E /* FrameWorks */,
 				5F85FF731C27E2300092FE81 /* Libraries */,
 				5FDC7C4F1C1FEF790044AE20 /* Extensions */,
 				5FDC7C4C1C1FEEEF0044AE20 /* Controllers */,
@@ -152,6 +168,8 @@
 				5FE15ED31C240125000A4507 /* SubCategoryViewController.swift */,
 				5F85FF701C27C41E0092FE81 /* CartViewController.swift */,
 				5F85FF7D1C280F740092FE81 /* ViewController.swift */,
+				5FF7B5D01C2A65300005301E /* SearchResultsController.swift */,
+				5FF7B5D21C2A882E0005301E /* ProductScreenViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -187,8 +205,6 @@
 		5FDC7C531C1FF70F0044AE20 /* SubClasses */ = {
 			isa = PBXGroup;
 			children = (
-				5F85FF801C2820050092FE81 /* Fabric.framework */,
-				5F85FF811C2820050092FE81 /* Crashlytics.framework */,
 				5FDC7C541C1FF7330044AE20 /* HorizontalLineView.swift */,
 				5F3111381C21515B000685E9 /* MenuTableViewCell.swift */,
 				5F3111441C2177C5000685E9 /* CustomNavigationBar.swift */,
@@ -200,8 +216,21 @@
 				5F85FF6E1C27BF370092FE81 /* CustomSegmentedControl.swift */,
 				5FEA683B1C291A1800F7B582 /* CustomSearchBar.swift */,
 				5FEA683C1C291A1800F7B582 /* CustomSearchController.swift */,
+				5FF7B5DC1C2ACE500005301E /* CustomFlowLayout.swift */,
 			);
 			name = SubClasses;
+			sourceTree = "<group>";
+		};
+		5FF7B5D51C2AA0330005301E /* FrameWorks */ = {
+			isa = PBXGroup;
+			children = (
+				5FF7B5D81C2AA6BD0005301E /* Bolts.framework */,
+				5FF7B5D91C2AA6BD0005301E /* FBSDKLoginKit.framework */,
+				5FF7B5D61C2AA3750005301E /* FBSDKCoreKit.framework */,
+				5F85FF801C2820050092FE81 /* Fabric.framework */,
+				5F85FF811C2820050092FE81 /* Crashlytics.framework */,
+			);
+			name = FrameWorks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,9 +326,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FE475DC1C22A43500050ABA /* CategoryViewController.swift in Sources */,
+				5FF7B5D31C2A882E0005301E /* ProductScreenViewController.swift in Sources */,
 				5FE15ED41C240125000A4507 /* SubCategoryViewController.swift in Sources */,
 				5FDC7C551C1FF7330044AE20 /* HorizontalLineView.swift in Sources */,
 				5FBC07BA1C20282400A0FAB6 /* SignInAndSignUpViewController.swift in Sources */,
+				5FF7B5D11C2A65300005301E /* SearchResultsController.swift in Sources */,
 				5F3111391C21515B000685E9 /* MenuTableViewCell.swift in Sources */,
 				5F85FF6F1C27BF370092FE81 /* CustomSegmentedControl.swift in Sources */,
 				5FE15ED81C240505000A4507 /* SubCategoryCollectionViewCell.swift in Sources */,
@@ -318,6 +349,7 @@
 				5F85FF7E1C280F740092FE81 /* ViewController.swift in Sources */,
 				5FE475E61C22CDFA00050ABA /* MasterCollectionViewCell.swift in Sources */,
 				5FEA683D1C291A1800F7B582 /* CustomSearchBar.swift in Sources */,
+				5FF7B5DD1C2ACE500005301E /* CustomFlowLayout.swift in Sources */,
 				5FB9661B1C1EABC70087C9BC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +469,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/GergStore",
 				);
 				INFOPLIST_FILE = GergStore/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -459,6 +492,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/GergStore",
 				);
 				INFOPLIST_FILE = GergStore/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

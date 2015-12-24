@@ -33,15 +33,15 @@ class CustomSearchBar: UISearchBar {
             searchField.textColor = preferredTextColor
             
             // Set the background color of the search field.
-            searchField.backgroundColor = UIColor(red: 80/255, green: 185/255, blue: 254/255, alpha: 1)
-            searchField.layer.borderWidth=1
-            searchField.layer.borderColor = UIColor.whiteColor().CGColor
-            searchField.layer.cornerRadius = 15
+            searchField.backgroundColor = UIColor.clearColor()
+            searchField.layer.cornerRadius = 14
         }
         
 //        
-//        self.layer.borderWidth = 0
-//        self.layer.borderColor = UIColor(red: 80/255, green: 185/255, blue: 254/255, alpha: 1).CGColor
+        self.layer.borderWidth = 1
+        self.layer.borderColor = UIColor.whiteColor().CGColor
+        self.layer.cornerRadius = 13
+        self.clipsToBounds = true
         
         super.drawRect(rect)
     }

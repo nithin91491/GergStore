@@ -78,6 +78,8 @@ class SignInAndSignUpViewController: UIViewController {
         datePicker.datePickerMode = .Date
         txtDateOfBirth.inputView = datePicker
         
+        datePicker.addTarget(self, action: "dateDidChange:", forControlEvents: .ValueChanged)
+        
         let toolBar = UIToolbar()
         toolBar.barStyle = UIBarStyle.Default
         toolBar.translucent = true
@@ -91,13 +93,16 @@ class SignInAndSignUpViewController: UIViewController {
         txtDateOfBirth.inputAccessoryView = toolBar
         
     }
+    
+    func dateDidChange(sender:UIDatePicker){
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateStyle = .MediumStyle
+        let dateString = dateFormatter.stringFromDate(sender.date)
+        self.txtDateOfBirth.text = dateString
+    }
 
     func donePicker(){
-        
-        
-        
         self.view.endEditing(true)
-        
     }
     
     

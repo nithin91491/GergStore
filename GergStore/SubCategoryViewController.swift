@@ -8,36 +8,45 @@
 
 import UIKit
 
-class SubCategoryViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UITextFieldDelegate,CustomSearchControllerDelegate {
-
-    var customSearchController:CustomSearchController!
+class SubCategoryViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
+    
+    @IBOutlet weak var collectionVIew: UICollectionView!
+    
+    var isListView:Bool = false
+    
+    @IBAction func viewTypeDidChange(sender: AnyObject) {
+       
+        let segmentControl = sender as! UISegmentedControl
+        if segmentControl.selectedSegmentIndex == 0 {
+            //Grid View
+            isListView = false
+        }
+        else { // List View
+            isListView = true
+        }
+        self.collectionVIew.reloadData()
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
+        //Set Up Hamburger Menu
         if self.revealViewController() != nil {
             self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "menu"), style: .Plain, target: self.revealViewController(), action: "revealToggle:")
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
         
-        let barTintColor = UIColor(red: 80/255, green: 185/255, blue: 254/255, alpha: 1)
-        
-        customSearchController = CustomSearchController(searchResultsController: self, searchBarFrame: CGRectMake(0.0, 0.0, 200.0, 25.0), searchBarFont: UIFont(name: "Futura", size: 16.0)!, searchBarTextColor: UIColor.orangeColor(), searchBarTintColor: barTintColor)
-        
-        customSearchController.customSearchBar.placeholder = "Search"
+        //Set up SearchController
+        let searchResultsController = SearchResultsController()
         
         let frame = CGRectMake(0, 0, 200, 25.0)
-        
         let titleViewCustom = UIView(frame:frame)
-        
-        titleViewCustom.addSubview(customSearchController.customSearchBar)
-        //customSearchController.customSearchBar.sizeToFit()
+        titleViewCustom.addSubview(searchResultsController.customSearchController.customSearchBar)
         titleViewCustom.backgroundColor = UIColor.clearColor()
-        //titleViewCustom.sizeToFit()
         self.navigationItem.titleView = titleViewCustom
-        customSearchController.customDelegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,16 +54,21 @@ class SubCategoryViewController: UIViewController,UICollectionViewDelegate,UICol
         // Dispose of any resources that can be recreated.
     }
     
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
-        
-        textField.resignFirstResponder()
-        return false
-    }
-    
+       
     //MARK : - Delegate Methods
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("subCategoryCell", forIndexPath: indexPath) as! SubCategoryCollectionViewCell
+        
+        
+        let cell:SubCategoryCollectionViewCell
+        
+        if !isListView{
+            cell = collectionView.dequeueReusableCellWithReuseIdentifier("subCategoryCell", forIndexPath: indexPath) as! SubCategoryCollectionViewCell
+        }
+        else{
+             cell = collectionView.dequeueReusableCellWithReuseIdentifier("subCategoryListCell", forIndexPath: indexPath) as! SubCategoryCollectionViewCell
+        }
+        
         cell.imageView.image = UIImage(named: "pinkFW")
         cell.lblProductName.text = "Pink Footwear"
         cell.lblCategoryName.text = "Women's Footwear"
@@ -62,11 +76,34 @@ class SubCategoryViewController: UIViewController,UICollectionViewDelegate,UICol
         return cell
     }
     
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        
+        if isListView{
+            return CGSizeMake(self.view.frame.width, 100)
+        }
+        else{
+            return CGSizeMake(100, 150)
+        }
+    }
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAtIndex section: Int) -> CGFloat {
+        
+        if isListView{
+        return 1.0
+        }
+        else{
+            return 10
+        }
+    }
+    
+  
+    
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
        
       return 10
         
     }
+    
     
     
 
@@ -79,39 +116,5 @@ class SubCategoryViewController: UIViewController,UICollectionViewDelegate,UICol
         // Pass the selected object to the new view controller.
     }
     */
-    
-    //Custom search controller delegate methods
-    func didStartSearching() {
-        //        shouldShowSearchResults = true
-        //        tblSearchResults.reloadData()
-    }
-    
-    
-    func didTapOnSearchButton() {
-        //        if !shouldShowSearchResults {
-        //            shouldShowSearchResults = true
-        //            tblSearchResults.reloadData()
-        //        }
-    }
-    
-    
-    func didTapOnCancelButton() {
-        //        shouldShowSearchResults = false
-        //        tblSearchResults.reloadData()
-    }
-    
-    
-    func didChangeSearchText(searchText: String) {
-        // Filter the data array and get only those countries that match the search text.
-        //        filteredArray = dataArray.filter({ (country) -> Bool in
-        //            let countryText: NSString = country
-        //
-        //            return (countryText.rangeOfString(searchText, options: NSStringCompareOptions.CaseInsensitiveSearch).location) != NSNotFound
-        //        })
-        //
-        //        // Reload the tableview.
-        //        tblSearchResults.reloadData()
-    }
-
 
 }

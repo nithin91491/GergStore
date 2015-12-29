@@ -8,22 +8,32 @@
 
 import UIKit
 
-class CustomSearchBar: UISearchBar {
+
+extension UISearchBarDelegate{
+    
+    public func textDidClear(searchField:UITextField)->Bool{
+      return false
+    }
+    
+}
+
+class CustomSearchBar: UISearchBar,UITextFieldDelegate {
 
     var preferredFont: UIFont!
     
     var preferredTextColor: UIColor!
     
+    var customDelegate:CustomSearchController!
     
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
+    
+
     override func drawRect(rect: CGRect) {
         // Drawing code
         
         // Find the index of the search field in the search bar subviews.
         if let index = indexOfSearchFieldInSubviews() {
             // Access the search field
-            let searchField: UITextField = (subviews[0] ).subviews[index] as! UITextField
+           let searchField = (subviews[0] ).subviews[index] as! UITextField
             
             // Set its frame.
             searchField.frame = CGRectMake(0.0, 0.0, frame.size.width , frame.size.height)
@@ -37,7 +47,6 @@ class CustomSearchBar: UISearchBar {
             searchField.layer.cornerRadius = 14
         }
         
-//        
         self.layer.borderWidth = 1
         self.layer.borderColor = UIColor.whiteColor().CGColor
         self.layer.cornerRadius = 13
@@ -57,6 +66,8 @@ class CustomSearchBar: UISearchBar {
         
         searchBarStyle = UISearchBarStyle.Minimal
         translucent = true
+        self.delegate = self.customDelegate
+        
     }
     
     
@@ -65,9 +76,8 @@ class CustomSearchBar: UISearchBar {
     }
     
     
+    
     func indexOfSearchFieldInSubviews() -> Int! {
-        // Uncomment the next line to see the search bar subviews.
-        // println(subviews[0].subviews)
         
         var index: Int!
         let searchBarView = subviews[0] 
@@ -81,4 +91,10 @@ class CustomSearchBar: UISearchBar {
         
         return index
     }
+    
+    //MARK: - Text field delegate function
+    func textFieldShouldClear(textField: UITextField) -> Bool {
+       return self.customDelegate.textDidClear(textField)
+    }
+    
 }

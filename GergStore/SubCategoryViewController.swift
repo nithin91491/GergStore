@@ -25,6 +25,7 @@ class SubCategoryViewController: UIViewController,UICollectionViewDelegate,UICol
             isListView = true
         }
         self.collectionVIew.reloadData()
+        
     }
     
     
@@ -79,7 +80,7 @@ class SubCategoryViewController: UIViewController,UICollectionViewDelegate,UICol
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         
         if isListView{
-            return CGSizeMake(self.view.frame.width, 100)
+            return CGSizeMake(collectionView.frame.width-60, 100)
         }
         else{
             return CGSizeMake(100, 150)

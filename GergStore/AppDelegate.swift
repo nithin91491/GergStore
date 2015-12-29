@@ -28,10 +28,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UIBarButtonItem.appearance()
             .setBackButtonTitlePositionAdjustment(UIOffsetMake(0, -66), forBarMetrics: .Default)
         
+        
+        //Implement Facebook SignIn
         return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
 
         //return true
     }
+    
+    
     
     func application(application: UIApplication,
         openURL url: NSURL,

@@ -19,6 +19,8 @@ protocol CustomSearchControllerDelegate {
 }
 
 
+
+
 class CustomSearchController: UISearchController, UISearchBarDelegate {
 
     var customSearchBar: CustomSearchBar!
@@ -28,8 +30,7 @@ class CustomSearchController: UISearchController, UISearchBarDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -62,11 +63,11 @@ class CustomSearchController: UISearchController, UISearchBarDelegate {
         customSearchBar = CustomSearchBar(frame: frame, font: font , textColor: textColor)
         
         customSearchBar.barTintColor = bgColor
-        //customSearchBar.barTintColor = UIColor.blueColor()
         customSearchBar.tintColor = textColor
         customSearchBar.showsBookmarkButton = false
         customSearchBar.showsCancelButton = false
-        customSearchBar.delegate = self
+        customSearchBar.customDelegate = self
+        
     }
     
     
@@ -74,8 +75,6 @@ class CustomSearchController: UISearchController, UISearchBarDelegate {
     
     func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
         customDelegate.didStartSearching()
-        self.customSearchBar.showsCancelButton = true
-        
     }
     
     
@@ -88,12 +87,18 @@ class CustomSearchController: UISearchController, UISearchBarDelegate {
     func searchBarCancelButtonClicked(searchBar: UISearchBar) {
         customSearchBar.resignFirstResponder()
         customDelegate.didTapOnCancelButton()
-        self.customSearchBar.showsCancelButton = false
     }
     
     
     func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
+        
         customDelegate.didChangeSearchText(searchText)
     }
+    
+    func textDidClear(sender:UITextField)->Bool {
+        self.performSelector("searchBarCancelButtonClicked:", withObject: self.customSearchBar, afterDelay: 0.1)
+        return true
+    }
+
     
 }
